@@ -3,7 +3,7 @@ import { PORTFOLIO_DATA } from "@/lib/data";
 
 export function Experience() {
   return (
-    <section className="py-16 md:py-24 px-6 bg-secondary/30">
+    <section className="py-16 md:py-24 px-6 bg-secondary/40">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -22,7 +22,7 @@ export function Experience() {
         </motion.div>
 
         <div className="max-w-4xl relative">
-          <div className="absolute left-0 md:left-8 top-0 bottom-0 w-[1px] bg-white/10" />
+          <div className="absolute left-0 md:left-8 top-0 bottom-0 w-[1px] bg-foreground/15" />
 
           {PORTFOLIO_DATA.experience.map((exp, index) => (
             <motion.div
@@ -34,10 +34,10 @@ export function Experience() {
               transition={{ duration: 0.7, delay: index * 0.1 }}
             >
               {/* Dot */}
-              <div className="absolute left-0 md:left-8 top-6 w-4 h-4 rounded-full bg-background border-2 border-primary -translate-x-1/2 z-10" />
+              <div className="absolute left-0 md:left-8 top-6 w-4 h-4 rounded-full bg-background border-2 border-primary -translate-x-1/2 z-10 shadow-sm" />
 
               <div className="glass-panel p-8 rounded-2xl hover-elevate w-full">
-                <span className="text-primary font-mono text-sm mb-3 block">{exp.period}</span>
+                <span className="text-primary font-mono text-sm mb-3 block font-medium">{exp.period}</span>
                 <h3 className="text-2xl font-display font-bold text-foreground mb-1">{exp.role}</h3>
                 <h4 className="text-muted-foreground text-base mb-4">{exp.company}</h4>
                 <p className="text-muted-foreground font-light text-sm leading-relaxed">

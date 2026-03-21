@@ -24,7 +24,6 @@ export function Skills() {
               A comprehensive toolkit combining structural design thinking with deep technical execution to create memorable experiences.
             </p>
 
-            {/* Skill categories legend */}
             <div className="flex flex-wrap gap-4">
               {["Adobe Suite", "Creative", "Production"].map((cat) => (
                 <div key={cat} className="flex items-center gap-2">
@@ -49,7 +48,7 @@ export function Skills() {
                     <span className="text-sm font-medium uppercase tracking-widest text-foreground group-hover:text-primary transition-colors">
                       {skill.name}
                     </span>
-                    <span className="text-[10px] text-muted-foreground border border-white/10 px-2 py-0.5 rounded-full">
+                    <span className="text-[10px] text-muted-foreground border border-foreground/15 px-2 py-0.5 rounded-full">
                       {skill.category}
                     </span>
                   </div>
@@ -57,9 +56,9 @@ export function Skills() {
                     {skill.level}%
                   </span>
                 </div>
-                <div className="h-0.5 w-full bg-white/10 relative overflow-hidden">
+                <div className="h-0.5 w-full bg-foreground/10 relative overflow-hidden rounded-full">
                   <motion.div
-                    className="absolute top-0 left-0 h-full bg-primary"
+                    className="absolute top-0 left-0 h-full bg-primary rounded-full"
                     initial={{ width: 0 }}
                     animate={{ width: `${skill.level}%` }}
                     transition={{ duration: 1.5, delay: 0.2 + (index * 0.06), ease: "easeOut" }}

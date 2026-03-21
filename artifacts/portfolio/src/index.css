@@ -50,57 +50,55 @@
 }
 
 :root {
-  /* DARK ELEGANT MINIMAL THEME */
-  --background: 0 0% 3%;
-  --foreground: 0 0% 98%;
-  
-  --card: 0 0% 5%;
-  --card-foreground: 0 0% 98%;
-  --card-border: 0 0% 12%;
-  
-  --popover: 0 0% 5%;
-  --popover-foreground: 0 0% 98%;
-  --popover-border: 0 0% 12%;
-  
-  /* Elegant Gold Accent */
-  --primary: 43 74% 66%;
-  --primary-foreground: 0 0% 9%;
-  
-  --secondary: 0 0% 12%;
-  --secondary-foreground: 0 0% 98%;
-  
-  --muted: 0 0% 12%;
-  --muted-foreground: 0 0% 60%;
-  
-  --accent: 43 74% 66%;
-  --accent-foreground: 0 0% 9%;
-  
-  --destructive: 0 84% 60%;
-  --destructive-foreground: 0 0% 98%;
-  
-  --border: 0 0% 12%;
-  --input: 0 0% 12%;
-  --ring: 43 74% 66%;
+  /* WARM BEIGE + DEEP GREEN PREMIUM THEME */
+  --background: 36 30% 95%;          /* warm cream #F7F2EA */
+  --foreground: 160 25% 12%;         /* dark forest green #19251F */
+
+  --card: 36 25% 91%;                /* slightly deeper beige #EDE7DB */
+  --card-foreground: 160 25% 12%;
+  --card-border: 36 18% 84%;         /* beige border #DDD6C8 */
+
+  --popover: 36 25% 91%;
+  --popover-foreground: 160 25% 12%;
+  --popover-border: 36 18% 84%;
+
+  /* Deep Green Primary — #2F5D50 */
+  --primary: 163 33% 27%;
+  --primary-foreground: 0 0% 100%;
+
+  --secondary: 36 22% 89%;           /* lighter warm beige for alt sections */
+  --secondary-foreground: 160 25% 12%;
+
+  --muted: 36 18% 87%;
+  --muted-foreground: 163 12% 42%;   /* olive-gray for body text */
+
+  --accent: 163 33% 27%;
+  --accent-foreground: 0 0% 100%;
+
+  --destructive: 0 72% 51%;
+  --destructive-foreground: 0 0% 100%;
+
+  --border: 36 18% 84%;
+  --input: 36 18% 84%;
+  --ring: 163 33% 27%;
 
   --app-font-sans: 'Inter', sans-serif;
   --app-font-display: 'Syne', sans-serif;
-  
+
   --radius: 0.5rem;
-  
-  /* Deep, elegant shadows */
-  --shadow-sm: 0 4px 20px -2px rgba(0, 0, 0, 0.5);
-  --shadow: 0 8px 30px -4px rgba(0, 0, 0, 0.6);
-  --shadow-md: 0 12px 40px -6px rgba(0, 0, 0, 0.7);
-  --shadow-lg: 0 20px 50px -8px rgba(0, 0, 0, 0.8);
-  --shadow-xl: 0 30px 60px -10px rgba(0, 0, 0, 0.9);
 
-  --button-outline: rgba(255,255,255, .10);
-  --badge-outline: rgba(255,255,255, .05);
+  --shadow-sm: 0 4px 20px -2px rgba(47, 93, 80, 0.08);
+  --shadow: 0 8px 30px -4px rgba(47, 93, 80, 0.12);
+  --shadow-md: 0 12px 40px -6px rgba(47, 93, 80, 0.15);
+  --shadow-lg: 0 20px 50px -8px rgba(47, 93, 80, 0.18);
+  --shadow-xl: 0 30px 60px -10px rgba(47, 93, 80, 0.22);
+
+  --button-outline: rgba(47, 93, 80, 0.15);
+  --badge-outline: rgba(47, 93, 80, 0.08);
   --opaque-button-border-intensity: 9;
-  --elevate-1: rgba(255,255,255, .04);
-  --elevate-2: rgba(255,255,255, .09);
+  --elevate-1: rgba(47, 93, 80, 0.04);
+  --elevate-2: rgba(47, 93, 80, 0.08);
 
-  /* Fallback borders */
   --primary-border: hsl(var(--primary));
   --secondary-border: hsl(var(--secondary));
   --muted-border: hsl(var(--muted));
@@ -116,7 +114,7 @@
   body {
     @apply font-sans antialiased bg-background text-foreground overflow-x-hidden selection:bg-primary selection:text-primary-foreground;
   }
-  
+
   html {
     scroll-behavior: smooth;
   }
@@ -131,17 +129,18 @@
     @apply transition-all duration-300;
   }
   .hover-elevate:hover {
-    @apply -translate-y-1 shadow-lg shadow-black/50;
+    @apply -translate-y-1;
+    box-shadow: 0 12px 30px rgba(47, 93, 80, 0.15);
   }
-  
+
   .glass-panel {
-    @apply bg-background/60 backdrop-blur-md border border-white/5;
+    @apply bg-white/70 backdrop-blur-md border border-foreground/8;
   }
-  
+
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-white via-white/80 to-white/40;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-foreground via-foreground/80 to-foreground/40;
   }
-  
+
   .text-gradient-gold {
     @apply bg-clip-text text-transparent bg-gradient-to-r from-primary via-primary/80 to-primary/40;
   }

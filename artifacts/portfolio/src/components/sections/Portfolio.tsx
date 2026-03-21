@@ -12,7 +12,7 @@ export function Portfolio() {
   );
 
   return (
-    <section className="py-24 md:py-32 px-6 bg-secondary/30">
+    <section className="py-16 md:py-24 px-6 bg-secondary/40">
       <div className="max-w-7xl mx-auto">
         <motion.div
           className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-16"
@@ -37,8 +37,8 @@ export function Portfolio() {
                 onClick={() => setActiveCategory(category)}
                 className={`px-5 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
                   activeCategory === category
-                    ? "bg-primary text-primary-foreground"
-                    : "border border-white/10 hover:border-white/30 text-muted-foreground hover:text-foreground"
+                    ? "bg-primary text-white shadow-sm"
+                    : "border border-foreground/15 hover:border-primary/40 text-muted-foreground hover:text-primary"
                 }`}
               >
                 {category}
@@ -57,7 +57,7 @@ export function Portfolio() {
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.9 }}
                 transition={{ duration: 0.4 }}
-                className="group relative overflow-hidden rounded-xl aspect-[4/5] bg-card cursor-pointer"
+                className="group relative overflow-hidden rounded-xl aspect-[4/5] bg-card cursor-pointer shadow-sm"
                 onClick={() => setSelectedProject(project)}
               >
                 <img
@@ -69,10 +69,9 @@ export function Portfolio() {
                   }}
                 />
 
-                {/* Video badge */}
                 {project.category === "Videography" && (
-                  <div className="absolute top-4 right-4 z-20 w-10 h-10 rounded-full bg-primary/90 flex items-center justify-center">
-                    <Play className="w-4 h-4 text-black fill-black ml-0.5" />
+                  <div className="absolute top-4 right-4 z-20 w-10 h-10 rounded-full bg-primary/90 flex items-center justify-center shadow-md">
+                    <Play className="w-4 h-4 text-white fill-white ml-0.5" />
                   </div>
                 )}
 
@@ -109,7 +108,7 @@ export function Portfolio() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-[100] bg-black/95 backdrop-blur-sm flex items-center justify-center p-4 md:p-12"
+            className="fixed inset-0 z-[100] bg-black/90 backdrop-blur-sm flex items-center justify-center p-4 md:p-12"
             onClick={() => setSelectedProject(null)}
           >
             <button
@@ -147,7 +146,7 @@ export function Portfolio() {
                     href={selectedProject.videoUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-full text-sm font-medium uppercase tracking-widest hover:bg-primary/90 transition-all duration-300"
+                    className="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-full text-sm font-medium uppercase tracking-widest hover:bg-primary/90 transition-all duration-300"
                     onClick={(e) => e.stopPropagation()}
                   >
                     <Play className="w-4 h-4 fill-current" />

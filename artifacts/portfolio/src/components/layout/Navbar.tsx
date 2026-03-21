@@ -39,7 +39,9 @@ export function Navbar({ activePage }: NavbarProps) {
     <header
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-500 py-4 px-6 md:px-12",
-        scrolled ? "bg-background/80 backdrop-blur-lg border-b border-white/5 py-4" : "bg-transparent py-6"
+        scrolled
+          ? "bg-background/90 backdrop-blur-lg border-b border-foreground/10 py-4 shadow-sm"
+          : "bg-transparent py-6"
       )}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
@@ -89,7 +91,7 @@ export function Navbar({ activePage }: NavbarProps) {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="absolute top-full left-0 right-0 bg-background/95 backdrop-blur-xl border-b border-white/5 py-6 px-6 flex flex-col gap-6 md:hidden shadow-2xl"
+            className="absolute top-full left-0 right-0 bg-background/95 backdrop-blur-xl border-b border-foreground/10 py-6 px-6 flex flex-col gap-6 md:hidden shadow-md"
           >
             {NAV_LINKS.map((link) => (
               <Link

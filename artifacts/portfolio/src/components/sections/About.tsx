@@ -15,16 +15,16 @@ export function About() {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            <div className="aspect-[3/4] rounded-2xl overflow-hidden relative group">
-              <div className="absolute inset-0 bg-primary/10 mix-blend-overlay z-10 group-hover:opacity-0 transition-opacity duration-700" />
+            <div className="aspect-[3/4] rounded-2xl overflow-hidden relative group shadow-lg">
+              <div className="absolute inset-0 bg-primary/10 mix-blend-multiply z-10 group-hover:opacity-0 transition-opacity duration-700" />
               <img
                 src={`${import.meta.env.BASE_URL}images/real/self_portert-011.png`}
                 alt={PORTFOLIO_DATA.personal.fullName}
                 className="w-full h-full object-cover object-top grayscale group-hover:grayscale-0 transition-all duration-700"
               />
             </div>
-            <div className="absolute -bottom-6 -right-6 w-32 h-32 border border-primary/30 rounded-full hidden md:block" />
-            <div className="absolute -top-4 -left-4 w-16 h-16 border border-white/10 rounded-full hidden md:block" />
+            <div className="absolute -bottom-6 -right-6 w-32 h-32 border border-primary/25 rounded-full hidden md:block" />
+            <div className="absolute -top-4 -left-4 w-16 h-16 border border-foreground/10 rounded-full hidden md:block" />
           </motion.div>
 
           {/* Text Column */}
@@ -60,18 +60,18 @@ export function About() {
               ))}
             </div>
 
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-8 border-t border-white/10 pt-8">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-8 border-t border-foreground/10 pt-8">
               <div>
                 <p className="text-xs uppercase tracking-widest text-muted-foreground mb-2">Location</p>
-                <p className="font-medium">{PORTFOLIO_DATA.personal.location}</p>
+                <p className="font-medium text-foreground">{PORTFOLIO_DATA.personal.location}</p>
               </div>
               <div>
                 <p className="text-xs uppercase tracking-widest text-muted-foreground mb-2">Role</p>
-                <p className="font-medium">{PORTFOLIO_DATA.personal.role}</p>
+                <p className="font-medium text-foreground">{PORTFOLIO_DATA.personal.role}</p>
               </div>
               <div>
                 <p className="text-xs uppercase tracking-widest text-muted-foreground mb-2">Experience</p>
-                <p className="font-medium">15+ Years</p>
+                <p className="font-medium text-foreground">15+ Years</p>
               </div>
             </div>
           </motion.div>

@@ -67,46 +67,46 @@ export function Contact() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
 
-          {/* Left Column: Contact Info */}
+          {/* Left: Contact Info */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="flex flex-col gap-8"
+            className="flex flex-col gap-6"
           >
-            <div className="glass-panel rounded-2xl p-6 flex items-center gap-4">
+            <div className="glass-panel rounded-2xl p-6 flex items-center gap-4 hover-elevate">
               <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
                 <Mail className="w-5 h-5 text-primary" />
               </div>
               <div>
                 <p className="text-xs uppercase tracking-widest text-muted-foreground mb-1">Email</p>
-                <a href={`mailto:${PORTFOLIO_DATA.personal.email}`} className="font-medium hover:text-primary transition-colors">
+                <a href={`mailto:${PORTFOLIO_DATA.personal.email}`} className="font-medium hover:text-primary transition-colors text-foreground">
                   {PORTFOLIO_DATA.personal.email}
                 </a>
               </div>
             </div>
 
-            <div className="glass-panel rounded-2xl p-6 flex items-center gap-4">
+            <div className="glass-panel rounded-2xl p-6 flex items-center gap-4 hover-elevate">
               <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
                 <Phone className="w-5 h-5 text-primary" />
               </div>
               <div>
                 <p className="text-xs uppercase tracking-widest text-muted-foreground mb-1">Phone</p>
-                <p className="font-medium">{PORTFOLIO_DATA.personal.phone}</p>
+                <p className="font-medium text-foreground">{PORTFOLIO_DATA.personal.phone}</p>
               </div>
             </div>
 
-            <div className="glass-panel rounded-2xl p-6 flex items-center gap-4">
+            <div className="glass-panel rounded-2xl p-6 flex items-center gap-4 hover-elevate">
               <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
                 <MapPin className="w-5 h-5 text-primary" />
               </div>
               <div>
                 <p className="text-xs uppercase tracking-widest text-muted-foreground mb-1">Location</p>
-                <p className="font-medium">{PORTFOLIO_DATA.personal.location}</p>
+                <p className="font-medium text-foreground">{PORTFOLIO_DATA.personal.location}</p>
               </div>
             </div>
 
-            <div>
+            <div className="pt-2">
               <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4">Socials</p>
               <div className="flex gap-4">
                 {PORTFOLIO_DATA.socials.map((social) => (
@@ -115,7 +115,7 @@ export function Contact() {
                     href={social.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-5 py-2.5 rounded-full border border-white/10 text-sm font-medium uppercase tracking-widest text-muted-foreground hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all duration-300"
+                    className="px-5 py-2.5 rounded-full border border-foreground/15 text-sm font-medium uppercase tracking-widest text-muted-foreground hover:bg-primary hover:text-white hover:border-primary transition-all duration-300"
                   >
                     {social.name}
                   </a>
@@ -124,12 +124,12 @@ export function Contact() {
             </div>
           </motion.div>
 
-          {/* Right Column: Form */}
+          {/* Right: Form */}
           <motion.div
             initial={{ opacity: 0, x: 40 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="glass-panel p-8 md:p-12 rounded-3xl"
+            className="glass-panel p-8 md:p-12 rounded-3xl shadow-md"
           >
             {isSuccess ? (
               <motion.div
