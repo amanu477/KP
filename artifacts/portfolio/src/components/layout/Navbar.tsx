@@ -3,22 +3,24 @@ import { cn } from "@/lib/utils";
 import { PORTFOLIO_DATA } from "@/lib/data";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-
-interface NavbarProps {
-  activeSection: string;
-}
+import { Link, useLocation } from "wouter";
 
 const NAV_LINKS = [
-  { name: "Home", href: "#home" },
-  { name: "About", href: "#about" },
-  { name: "Work", href: "#work" },
-  { name: "Skills", href: "#skills" },
-  { name: "Contact", href: "#contact" },
+  { name: "Home", href: "/" },
+  { name: "About", href: "/about" },
+  { name: "Work", href: "/work" },
+  { name: "Skills", href: "/skills" },
+  { name: "Contact", href: "/contact" },
 ];
 
-export function Navbar({ activeSection }: NavbarProps) {
+interface NavbarProps {
+  activePage?: string;
+}
+
+export function Navbar({ activePage }: NavbarProps) {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [location] = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,6 +30,11 @@ export function Navbar({ activeSection }: NavbarProps) {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const isActive = (href: string) => {
+    if (href === "/") return location === "/" || location === "";
+    return location.startsWith(href);
+  };
+
   return (
     <header
       className={cn(
@@ -36,24 +43,24 @@ export function Navbar({ activeSection }: NavbarProps) {
       )}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
-        <a href="#home" className="text-2xl font-display font-bold tracking-tighter text-foreground group">
+        <Link href="/" className="text-2xl font-display font-bold tracking-tighter text-foreground group hover:opacity-80 transition-opacity">
           {PORTFOLIO_DATA.personal.name.toUpperCase()}
-          <span className="text-primary group-hover:opacity-80 transition-opacity">.</span>
-        </a>
+          <span className="text-primary">.</span>
+        </Link>
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-8">
           {NAV_LINKS.map((link) => (
-            <a
+            <Link
               key={link.name}
               href={link.href}
               className={cn(
                 "text-sm font-medium uppercase tracking-widest transition-colors hover:text-primary relative py-2",
-                activeSection === link.href.slice(1) ? "text-primary" : "text-muted-foreground"
+                isActive(link.href) ? "text-primary" : "text-muted-foreground"
               )}
             >
               {link.name}
-              {activeSection === link.href.slice(1) && (
+              {isActive(link.href) && (
                 <motion.div
                   layoutId="nav-indicator"
                   className="absolute bottom-0 left-0 right-0 h-0.5 bg-primary"
@@ -61,7 +68,7 @@ export function Navbar({ activeSection }: NavbarProps) {
                   transition={{ type: "spring", stiffness: 300, damping: 30 }}
                 />
               )}
-            </a>
+            </Link>
           ))}
         </nav>
 
@@ -85,17 +92,17 @@ export function Navbar({ activeSection }: NavbarProps) {
             className="absolute top-full left-0 right-0 bg-background/95 backdrop-blur-xl border-b border-white/5 py-6 px-6 flex flex-col gap-6 md:hidden shadow-2xl"
           >
             {NAV_LINKS.map((link) => (
-              <a
+              <Link
                 key={link.name}
                 href={link.href}
                 onClick={() => setMobileMenuOpen(false)}
                 className={cn(
                   "text-lg font-display font-medium uppercase tracking-widest transition-colors",
-                  activeSection === link.href.slice(1) ? "text-primary" : "text-foreground"
+                  isActive(link.href) ? "text-primary" : "text-foreground"
                 )}
               >
                 {link.name}
-              </a>
+              </Link>
             ))}
           </motion.div>
         )}

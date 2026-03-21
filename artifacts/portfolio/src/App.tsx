@@ -3,8 +3,11 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Home from "@/pages/Home";
+import About from "@/pages/About";
+import Work from "@/pages/Work";
+import Skills from "@/pages/Skills";
+import Contact from "@/pages/Contact";
 
-// Fallback 404
 function NotFound() {
   return (
     <div className="min-h-screen w-full flex items-center justify-center bg-background text-foreground">
@@ -32,6 +35,10 @@ function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
+      <Route path="/about" component={About} />
+      <Route path="/work" component={Work} />
+      <Route path="/skills" component={Skills} />
+      <Route path="/contact" component={Contact} />
       <Route component={NotFound} />
     </Switch>
   );

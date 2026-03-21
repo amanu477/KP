@@ -3,7 +3,7 @@ import { PORTFOLIO_DATA } from "@/lib/data";
 
 export function About() {
   return (
-    <section id="about" className="py-24 md:py-40 px-6">
+    <section className="py-16 md:py-24 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 items-center">
 
@@ -23,7 +23,6 @@ export function About() {
                 className="w-full h-full object-cover object-top grayscale group-hover:grayscale-0 transition-all duration-700"
               />
             </div>
-            {/* Decorative elements */}
             <div className="absolute -bottom-6 -right-6 w-32 h-32 border border-primary/30 rounded-full hidden md:block" />
             <div className="absolute -top-4 -left-4 w-16 h-16 border border-white/10 rounded-full hidden md:block" />
           </motion.div>
@@ -41,9 +40,9 @@ export function About() {
               <span className="text-primary uppercase tracking-[0.3em] text-xs font-medium">About Me</span>
             </div>
 
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6 tracking-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6 tracking-tight">
               Aesthetically <br /> Driven<span className="text-primary">.</span>
-            </h2>
+            </h1>
 
             <p className="text-lg text-muted-foreground leading-relaxed font-light mb-6 max-w-2xl">
               {PORTFOLIO_DATA.personal.bio}
@@ -53,7 +52,6 @@ export function About() {
               {PORTFOLIO_DATA.personal.bio2}
             </p>
 
-            {/* Qualities */}
             <div className="flex flex-wrap gap-3 mb-10">
               {PORTFOLIO_DATA.qualities.map((q) => (
                 <span key={q} className="text-xs bg-primary/10 border border-primary/20 text-primary px-4 py-2 rounded-full uppercase tracking-widest">

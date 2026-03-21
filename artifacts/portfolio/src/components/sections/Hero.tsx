@@ -1,20 +1,21 @@
 import { motion } from "framer-motion";
 import { PORTFOLIO_DATA } from "@/lib/data";
-import { ArrowDown } from "lucide-react";
+import { ArrowRight } from "lucide-react";
+import { Link } from "wouter";
 
 export function Hero() {
   return (
-    <section id="home" className="relative min-h-screen flex items-center overflow-hidden pt-20">
+    <section className="relative min-h-[calc(100vh-80px)] flex items-center overflow-hidden">
       {/* Background subtle gradient */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-white/[0.02] to-transparent" />
         <div className="absolute bottom-[10%] left-[5%] w-[40vw] h-[40vw] rounded-full bg-primary/5 blur-[120px]" />
       </div>
 
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-0 items-center min-h-[calc(100vh-80px)]">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-0 items-center py-16">
 
         {/* Left: Text Content */}
-        <div className="flex flex-col justify-center py-16 lg:py-0 lg:pr-16">
+        <div className="flex flex-col justify-center lg:pr-16">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -75,19 +76,19 @@ export function Hero() {
             transition={{ duration: 1, delay: 0.6 }}
             className="flex items-center gap-6"
           >
-            <a
-              href="#work"
+            <Link
+              href="/work"
               className="inline-flex items-center gap-3 bg-primary text-primary-foreground px-8 py-4 rounded-full text-sm font-medium uppercase tracking-widest hover:bg-primary/90 transition-all duration-300 group"
             >
               View Work
-              <ArrowDown className="w-4 h-4 group-hover:translate-y-1 transition-transform" />
-            </a>
-            <a
-              href="#about"
+              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            </Link>
+            <Link
+              href="/about"
               className="text-sm font-medium uppercase tracking-widest text-muted-foreground hover:text-foreground transition-colors"
             >
               About Me
-            </a>
+            </Link>
           </motion.div>
         </div>
 
@@ -108,7 +109,7 @@ export function Hero() {
               alt={PORTFOLIO_DATA.personal.fullName}
               className="w-full h-full object-cover object-top"
             />
-            {/* Name overlay at bottom */}
+            {/* Info overlay */}
             <div className="absolute bottom-0 left-0 right-0 p-8 z-20">
               <p className="text-xs uppercase tracking-[0.3em] text-primary mb-1">
                 {PORTFOLIO_DATA.personal.location}
@@ -136,7 +137,7 @@ export function Hero() {
 
       {/* Scroll indicator */}
       <motion.div
-        className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.5, duration: 1 }}
