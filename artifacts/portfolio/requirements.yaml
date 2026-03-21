@@ -1,0 +1,38 @@
+packages:
+  "framer-motion": "For smooth scroll and scroll-triggered animations, essential for premium portfolio feel"
+  "react-intersection-observer": "To trigger animations when elements enter the viewport"
+  "lucide-react": "For UI icons and social media icons"
+  "react-hook-form": "For managing contact form state"
+  "@hookform/resolvers": "For Zod schema validation in contact form"
+  "zod": "For defining contact form validation schema"
+  "clsx": "For conditional class names"
+  "tailwind-merge": "For merging tailwind classes safely"
+
+images:
+  - path: "artifacts/portfolio/public/images/profile.png"
+    description: "A dramatic, moody studio portrait of a creative professional in shadows, minimal and elegant, dark background, cinematic lighting"
+    aspect_ratio: "3:4"
+  - path: "artifacts/portfolio/public/images/port-1.png"
+    description: "Stunning brutalist architecture photography, high contrast black and white, dramatic shadows, geometric"
+    aspect_ratio: "4:3"
+  - path: "artifacts/portfolio/public/images/port-2.png"
+    description: "High fashion editorial photography, cinematic lighting, elegant, moody, dark background"
+    aspect_ratio: "3:4"
+  - path: "artifacts/portfolio/public/images/port-3.png"
+    description: "Abstract 3D geometric render, dark elegant textures, subtle gold and black, glassmorphism"
+    aspect_ratio: "1:1"
+  - path: "artifacts/portfolio/public/images/port-4.png"
+    description: "Cinematic moody landscape photography, foggy mountains, deep greens and pure blacks"
+    aspect_ratio: "16:9"
+  - path: "artifacts/portfolio/public/images/port-5.png"
+    description: "Minimalist typography poster design, swiss style, monochrome, bold sans-serif text"
+    aspect_ratio: "3:4"
+  - path: "artifacts/portfolio/public/images/port-6.png"
+    description: "Neon-lit cyberpunk street photography, cinematic depth of field, rain reflections"
+    aspect_ratio: "4:3"
+
+notes:
+  - Pure static single-page application with smooth scrolling
+  - Uses Framer Motion for high-end scroll reveals and transitions
+  - All data is hardcoded for the portfolio presentation
+  - Contact form uses a simulated submission (no backend required)
