@@ -42,6 +42,22 @@ export const PORTFOLIO_DATA = {
     },
     {
       id: 2,
+      title: "OTF Logo Design",
+      category: "Branding",
+      year: "2022",
+      image: "images/real/OTF_logo_1.png",
+      description: "Primary logo design and brand mark for the Owning Their Future (OTF) program — crafted for print and digital use."
+    },
+    {
+      id: 3,
+      title: "Sample Logos Collection",
+      category: "Branding",
+      year: "2022",
+      image: "images/real/sampl_logos_.png",
+      description: "A collection of logo concepts and identity designs created for various clients and development sector organizations."
+    },
+    {
+      id: 4,
       title: "Radiant Consult Plc",
       category: "Branding",
       year: "2021",
@@ -49,7 +65,7 @@ export const PORTFOLIO_DATA = {
       description: "Company profile and brand design for Radiant Consult Plc, a construction management consultancy."
     },
     {
-      id: 3,
+      id: 5,
       title: "Hefly Profile Design",
       category: "Branding",
       year: "2021",
@@ -57,7 +73,7 @@ export const PORTFOLIO_DATA = {
       description: "Professional brand profile and visual identity design for Hefly."
     },
     {
-      id: 4,
+      id: 6,
       title: "PSI Ethiopia Newsletters",
       category: "Newsletter & Book Design",
       year: "2023",
@@ -65,7 +81,39 @@ export const PORTFOLIO_DATA = {
       description: "Newsletter layout and design for Population Services International Ethiopia — Powered by PSI Ethiopia campaign materials."
     },
     {
-      id: 5,
+      id: 7,
+      title: "PSI Newsletter — Inside Spread",
+      category: "Newsletter & Book Design",
+      year: "2023",
+      image: "images/real/Screen_Shot_2023-08-24_at_11.21.06_AM.png",
+      description: "Interior spread design for PSI Ethiopia newsletter — featuring structured editorial layout with bold photography."
+    },
+    {
+      id: 8,
+      title: "PSI Newsletter — Feature Layout",
+      category: "Newsletter & Book Design",
+      year: "2023",
+      image: "images/real/Screen_Shot_2023-08-24_at_11.24.37_AM.png",
+      description: "Feature article layout design for PSI Ethiopia — balancing data visualization, narrative text, and visual hierarchy."
+    },
+    {
+      id: 9,
+      title: "PSI Newsletter — Campaign Pages",
+      category: "Newsletter & Book Design",
+      year: "2023",
+      image: "images/real/Screen_Shot_2023-08-24_at_11.25.11_AM.png",
+      description: "Campaign awareness pages from the PSI Ethiopia quarterly newsletter — vibrant layouts with strong call-to-action design."
+    },
+    {
+      id: 10,
+      title: "PSI Newsletter — Editorial Spreads",
+      category: "Newsletter & Book Design",
+      year: "2023",
+      image: "images/real/Screen_Shot_2023-08-24_at_11.26.52_AM.png",
+      description: "Multi-page editorial design for PSI Ethiopia's development newsletter, showcasing program impact and stories from the field."
+    },
+    {
+      id: 11,
       title: "Water Aid Brochure",
       category: "Newsletter & Book Design",
       year: "2022",
@@ -73,7 +121,7 @@ export const PORTFOLIO_DATA = {
       description: "Print brochure design for the Water Aid project — professional layout, photography integration, and print-ready production."
     },
     {
-      id: 6,
+      id: 12,
       title: "English Pocket Book",
       category: "Newsletter & Book Design",
       year: "2023",
@@ -81,7 +129,7 @@ export const PORTFOLIO_DATA = {
       description: "Layout and design of an English language pocket book — compact format with accessible, clean typography."
     },
     {
-      id: 7,
+      id: 13,
       title: "Amerti Restaurant Branding",
       category: "Packaging",
       year: "2022",
@@ -89,7 +137,31 @@ export const PORTFOLIO_DATA = {
       description: "Full packaging and menu design for Amerti restaurant — from brand identity to menu layout and marketing materials."
     },
     {
-      id: 8,
+      id: 14,
+      title: "Amerti Menu Design",
+      category: "Packaging",
+      year: "2022",
+      image: "images/real/menu_-01.jpg",
+      description: "Custom menu layout and typography design for Amerti restaurant — clean, legible presentation with brand-consistent styling."
+    },
+    {
+      id: 15,
+      title: "Amerti Brand Applications",
+      category: "Packaging",
+      year: "2022",
+      image: "images/real/Amerti_Design_-03.jpg",
+      description: "Applied brand design across packaging, stationery, and print materials for Amerti restaurant."
+    },
+    {
+      id: 16,
+      title: "Amerti Visual System",
+      category: "Packaging",
+      year: "2022",
+      image: "images/real/Amerti_Design_-04.jpg",
+      description: "Extended visual system for Amerti restaurant — signage, mockups, and environmental graphic design."
+    },
+    {
+      id: 17,
       title: "Rollup Banner Design",
       category: "Packaging",
       year: "2022",
@@ -97,7 +169,7 @@ export const PORTFOLIO_DATA = {
       description: "Large-format rollup banner design for an import/export product campaign — bold layout and impactful print production."
     },
     {
-      id: 9,
+      id: 18,
       title: "Healthcare Illustrations",
       category: "Illustration",
       year: "2023",
@@ -105,7 +177,23 @@ export const PORTFOLIO_DATA = {
       description: "A series of healthcare and public health illustrations depicting patient interactions, community health workers, and clinic scenarios."
     },
     {
-      id: 10,
+      id: 19,
+      title: "Healthcare Illustration Series II",
+      category: "Illustration",
+      year: "2023",
+      image: "images/real/Screen_Shot_2023-08-15_at_2.56.56_PM1.png",
+      description: "Continued healthcare illustration series — detailed scenes capturing WASH and sanitation awareness for community education."
+    },
+    {
+      id: 20,
+      title: "Healthcare Illustration Series III",
+      category: "Illustration",
+      year: "2023",
+      image: "images/real/Screen_Shot_2023-08-15_at_2.56.56_PM2.png",
+      description: "Public health illustration artwork created for PSI Ethiopia's community health awareness campaigns."
+    },
+    {
+      id: 21,
       title: "Spearheading Consumer Healthcare",
       category: "Illustration",
       year: "2022",
@@ -113,7 +201,23 @@ export const PORTFOLIO_DATA = {
       description: "Illustration for the 'Spearheading Consumer-Powered Healthcare' campaign — bold, mixed-media artwork combining portraiture and graphic elements."
     },
     {
-      id: 11,
+      id: 22,
+      title: "Fine Art Illustration",
+      category: "Illustration",
+      year: "2022",
+      image: "images/real/Illustration_two.jpg",
+      description: "Fine art illustration work — combining traditional drawing techniques with digital rendering for expressive visual storytelling."
+    },
+    {
+      id: 23,
+      title: "Portrait Illustration",
+      category: "Illustration",
+      year: "2021",
+      image: "images/real/Roza_10_2nd_.png",
+      description: "Detailed portrait illustration demonstrating fine art skills and digital rendering technique."
+    },
+    {
+      id: 24,
       title: "USAID Transform WASH Photography",
       category: "Photography",
       year: "2023",
@@ -121,7 +225,7 @@ export const PORTFOLIO_DATA = {
       description: "Photography taken for USAID Transform WASH and OTF Projects — documenting development work and community impact in Ethiopia."
     },
     {
-      id: 12,
+      id: 25,
       title: "Women in Action — Award Winner",
       category: "Photography",
       year: "2023",
@@ -129,7 +233,7 @@ export const PORTFOLIO_DATA = {
       description: "Award winning photo for USAID Ethiopia's 'Women in Action' online photo contest — capturing strength, community, and empowerment."
     },
     {
-      id: 13,
+      id: 26,
       title: "Community Documentation",
       category: "Photography",
       year: "2022",
@@ -137,7 +241,47 @@ export const PORTFOLIO_DATA = {
       description: "Documentary photography capturing community life, health outreach, and development project activities across Ethiopia."
     },
     {
-      id: 14,
+      id: 27,
+      title: "Field Photography — WASH Project",
+      category: "Photography",
+      year: "2022",
+      image: "images/real/52390593730_a1341e6a7d_o_%281%29.jpg",
+      description: "Field documentation photography for the USAID Transform WASH project — capturing sanitation initiatives and community impact."
+    },
+    {
+      id: 28,
+      title: "Development Field Photography I",
+      category: "Photography",
+      year: "2022",
+      image: "images/real/photo_5850720054407182581_y.jpg",
+      description: "On-ground photography documenting community health workers, households, and development activities across Ethiopia."
+    },
+    {
+      id: 29,
+      title: "Development Field Photography II",
+      category: "Photography",
+      year: "2022",
+      image: "images/real/photo_5902065851559951450_y.jpg",
+      description: "Field photography series documenting the impact of health and sanitation programs in rural Ethiopian communities."
+    },
+    {
+      id: 30,
+      title: "Community Portraits",
+      category: "Photography",
+      year: "2022",
+      image: "images/real/photo_5936000942216427674_y.jpg",
+      description: "Portrait photography capturing the faces and stories of community members involved in USAID and PSI development programs."
+    },
+    {
+      id: 31,
+      title: "OTF Project Documentation",
+      category: "Photography",
+      year: "2022",
+      image: "images/real/photo_5931787287241275645_y_%282%29.jpg",
+      description: "Photographic documentation of the Owning Their Future (OTF) project activities — from training sessions to field implementation."
+    },
+    {
+      id: 32,
       title: "PSI Ethiopia Video Production",
       category: "Videography",
       year: "2023",
@@ -145,12 +289,20 @@ export const PORTFOLIO_DATA = {
       description: "Video production for Population Services International Ethiopia — USAID Transform WASH market development campaign highlighting sanitation products and services."
     },
     {
-      id: 15,
+      id: 33,
       title: "Field Documentary Videos",
       category: "Videography",
       year: "2022",
       image: "images/real/photo_5996675279487089470_x.jpg",
       description: "Documentary video series covering community health, water sanitation, and OTF project field activities across rural Ethiopia."
+    },
+    {
+      id: 34,
+      title: "WASH Campaign Video",
+      category: "Videography",
+      year: "2023",
+      image: "images/real/photo_5976598429092133803_w.jpg",
+      description: "Awareness campaign video production for the USAID Transform WASH program — focusing on behavior change communication."
     }
   ],
   skills: [
