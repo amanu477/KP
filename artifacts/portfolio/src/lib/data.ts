@@ -1,6 +1,6 @@
 export const PORTFOLIO_DATA = {
   personal: {
-    name: "Kaleb",
+    name: "Kaleb Atelier",
     fullName: "Kaleb Belete",
     role: "Creative Design & Production Lead",
     tagline: "Crafting visual stories through design, photography, and lens.",
