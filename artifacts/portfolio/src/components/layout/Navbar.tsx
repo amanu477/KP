@@ -38,7 +38,7 @@ export function Navbar({ activePage }: NavbarProps) {
   return (
     <header
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-primary px-6 md:px-12",
+        "fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-[hsl(163,28%,40%)] px-6 md:px-12",
         scrolled ? "py-3 shadow-lg shadow-primary/20" : "py-5"
       )}
     >
