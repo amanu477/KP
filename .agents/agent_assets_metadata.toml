@@ -1,0 +1,8 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "8Hogg-LlyBqGeRfHmr0gX"
+uri = "file://portfolio-build.tar.gz"
+type = "unspecified"
+title = "Portfolio Build Files"
