@@ -82,8 +82,7 @@ export const PORTFOLIO_DATA = {
       title: "ምሉእ አመራር — Ashenafi Keneni",
       category: "Newsletter & Book Design",
       year: "2023",
-      image: "",
-      pdfUrl: "images/real/ashenafi-book.pdf",
+      image: "images/real/ashenafi-cover-1.jpg",
       description: "Book layout and design for 'ምሉእ አመራር' (Full Leadership) by Ashenafi Keneni Desa — a Amharic-language leadership and theology book covering the philosophy of complete leadership vs. Machiavellian leadership principles.",
       videoUrl: null
     },
@@ -92,7 +91,7 @@ export const PORTFOLIO_DATA = {
       title: "U-GIRLS 2 Project Booklet",
       category: "Newsletter & Book Design",
       year: "2025",
-      image: "",
+      image: "images/real/ugirls2-cover-01.jpg",
       pdfUrl: "images/real/ugirls2-booklet.pdf",
       description: "Project booklet design for Cuso International's U-GIRLS 2 initiative — promoting greater access to university for girls in Ethiopia's Benishangul-Gumuz region. Covers program objectives, key interventions, achievements, and impact.",
       videoUrl: null
