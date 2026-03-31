@@ -65,20 +65,31 @@ export function Portfolio() {
                 className="group relative overflow-hidden rounded-xl aspect-[4/5] bg-card cursor-pointer shadow-sm"
                 onClick={() => setSelectedProject(project)}
               >
-                {isPdf(project) ? (
-                  /* Book cover card for PDF projects */
+                {isPdf(project) && project.image ? (
+                  /* PDF project with a cover image — show the image + badge */
+                  <>
+                    <img
+                      src={`${import.meta.env.BASE_URL}${project.image}`}
+                      alt={project.title}
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                      onError={(e) => {
+                        (e.target as HTMLImageElement).src = `${import.meta.env.BASE_URL}images/profile.png`;
+                      }}
+                    />
+                    <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20">
+                      <span className="inline-flex items-center gap-2 bg-primary/90 text-white text-xs uppercase tracking-widest px-4 py-2 rounded-full shadow-lg backdrop-blur-sm">
+                        <BookOpen className="w-3.5 h-3.5" /> Read Book
+                      </span>
+                    </div>
+                  </>
+                ) : isPdf(project) ? (
+                  /* PDF project without an image — generic book card */
                   <div className="w-full h-full bg-gradient-to-br from-primary/90 to-primary/60 flex flex-col items-center justify-center p-8 text-center">
                     <div className="w-16 h-16 rounded-2xl bg-white/15 flex items-center justify-center mb-6 shadow-lg">
                       <BookOpen className="w-8 h-8 text-white" />
                     </div>
                     <p className="text-white/60 text-xs uppercase tracking-[0.25em] mb-3">
                       Book Design
-                    </p>
-                    <h3 className="text-white font-display font-bold text-xl leading-tight mb-2">
-                      ምሉእ አመራር
-                    </h3>
-                    <p className="text-white/70 text-sm">
-                      Ashenafi Keneni Desa
                     </p>
                     <div className="mt-auto pt-6">
                       <span className="inline-flex items-center gap-2 text-white/80 text-xs uppercase tracking-widest border border-white/20 px-4 py-2 rounded-full">
