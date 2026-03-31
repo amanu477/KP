@@ -427,6 +427,51 @@ export const PORTFOLIO_DATA = {
       image: "images/real/ngo-illus-27.jpg",
       description: "Child nutrition illustration for an NGO health awareness campaign — depicting a young child eating, used in community health education materials.",
       videoUrl: null
+    },
+    {
+      id: 45,
+      title: "JHUCCP Illustration — Seeking Care",
+      category: "Illustration",
+      year: "2023",
+      image: "images/real/jhu-illus-5.jpg",
+      description: "Illustration for Johns Hopkins Center for Communication Programs (JHUCCP) — a woman leaving home to seek healthcare, created for a health behaviour change communication campaign.",
+      videoUrl: null
+    },
+    {
+      id: 46,
+      title: "JHUCCP Illustration — Family & Education",
+      category: "Illustration",
+      year: "2023",
+      image: "images/real/jhu-illus-3.jpg",
+      description: "Illustration for JHUCCP depicting a mother accompanying her school-age daughter — used in community education and family support program materials.",
+      videoUrl: null
+    },
+    {
+      id: 47,
+      title: "JHUCCP Illustration — Community Scene",
+      category: "Illustration",
+      year: "2023",
+      image: "images/real/jhu-illus-2.jpg",
+      description: "Community street scene illustration for JHUCCP — a woman selling coffee as children walk to school, capturing everyday Ethiopian community life for health communication materials.",
+      videoUrl: null
+    },
+    {
+      id: 48,
+      title: "JHUCCP Illustration — Community Panels",
+      category: "Illustration",
+      year: "2023",
+      image: "images/real/jhu-illus-2b.jpg",
+      description: "Dual-panel illustration for JHUCCP showing community interactions — a street vendor scene alongside young men in discussion, used in social behaviour change communication.",
+      videoUrl: null
+    },
+    {
+      id: 49,
+      title: "JHUCCP Illustration — Group Discussion",
+      category: "Illustration",
+      year: "2023",
+      image: "images/real/jhu-illus-4.jpg",
+      description: "Illustration for JHUCCP depicting a health counselling or community meeting — a group of people in open discussion around a table, created for health communication program materials.",
+      videoUrl: null
     }
   ],
   skills: [
