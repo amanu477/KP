@@ -346,6 +346,87 @@ export const PORTFOLIO_DATA = {
       image: "images/real/photo_5996675279487089467_x1.jpg",
       description: "Behind-the-scenes video content for PSI Ethiopia's media campaigns — capturing the production process and field storytelling.",
       videoUrl: "https://www.facebook.com/PSIEthiopia/"
+    },
+    {
+      id: 36,
+      title: "NGO Illustration — Child Safety",
+      category: "Illustration",
+      year: "2023",
+      image: "images/real/ngo-illus-28.jpg",
+      description: "Illustration for an NGO child protection campaign — depicting a child reaching for a dangerous object, used in child safety awareness materials.",
+      videoUrl: null
+    },
+    {
+      id: 37,
+      title: "NGO Illustration — Children Studying",
+      category: "Illustration",
+      year: "2023",
+      image: "images/real/ngo-illus-24.jpg",
+      description: "Education-focused illustration for an NGO program — two children writing and learning together, created for community education campaigns.",
+      videoUrl: null
+    },
+    {
+      id: 38,
+      title: "NGO Illustration — Nutrition & Family",
+      category: "Illustration",
+      year: "2023",
+      image: "images/real/ngo-illus-20.jpg",
+      description: "Nutrition awareness illustration for an NGO health program — a mother and child with fresh fruits, promoting healthy eating habits.",
+      videoUrl: null
+    },
+    {
+      id: 39,
+      title: "NGO Illustration — Infant Feeding",
+      category: "Illustration",
+      year: "2023",
+      image: "images/real/ngo-illus-21.jpg",
+      description: "Illustration for an infant and young child feeding awareness campaign — depicting safe cup feeding practices for community health education.",
+      videoUrl: null
+    },
+    {
+      id: 40,
+      title: "NGO Illustration — Active Child",
+      category: "Illustration",
+      year: "2023",
+      image: "images/real/ngo-illus-23b.jpg",
+      description: "Illustration of an active child running and jumping — created for an NGO early childhood development and physical activity program.",
+      videoUrl: null
+    },
+    {
+      id: 41,
+      title: "NGO Illustration — Father & Child",
+      category: "Illustration",
+      year: "2023",
+      image: "images/real/ngo-illus-23.jpg",
+      description: "Family engagement illustration for an NGO parenting program — a father interacting with his young child, promoting positive caregiver involvement.",
+      videoUrl: null
+    },
+    {
+      id: 42,
+      title: "NGO Illustration — Dental Hygiene",
+      category: "Illustration",
+      year: "2023",
+      image: "images/real/ngo-illus-3.jpg",
+      description: "Hygiene awareness illustration for an NGO health campaign — a parent and child brushing teeth together to promote good dental hygiene habits.",
+      videoUrl: null
+    },
+    {
+      id: 43,
+      title: "NGO Illustration — Handwashing",
+      category: "Illustration",
+      year: "2023",
+      image: "images/real/ngo-illus-26.jpg",
+      description: "WASH program illustration — two children washing hands at a water station, created for a hygiene and sanitation behaviour change campaign.",
+      videoUrl: null
+    },
+    {
+      id: 44,
+      title: "NGO Illustration — Child Nutrition",
+      category: "Illustration",
+      year: "2023",
+      image: "images/real/ngo-illus-27.jpg",
+      description: "Child nutrition illustration for an NGO health awareness campaign — depicting a young child eating, used in community health education materials.",
+      videoUrl: null
     }
   ],
   skills: [
