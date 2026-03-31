@@ -105,7 +105,7 @@ export function Hero() {
           <div className="relative w-full max-w-[480px] aspect-[3/4] rounded-2xl overflow-hidden shadow-xl">
             <div className="absolute inset-0 bg-gradient-to-t from-foreground/30 via-transparent to-transparent z-10" />
             <img
-              src={`${import.meta.env.BASE_URL}images/real/self_portert-01.png`}
+              src={`${import.meta.env.BASE_URL}images/real/profile-photo.jpg`}
               alt={PORTFOLIO_DATA.personal.fullName}
               className="w-full h-full object-cover object-top"
             />
