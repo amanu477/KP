@@ -78,6 +78,16 @@ export const PORTFOLIO_DATA = {
       videoUrl: null
     },
     {
+      id: 50,
+      title: "ምሉእ አመራር — Ashenafi Keneni",
+      category: "Newsletter & Book Design",
+      year: "2023",
+      image: "",
+      pdfUrl: "images/real/ashenafi-book.pdf",
+      description: "Book layout and design for 'ምሉእ አመራር' (Full Leadership) by Ashenafi Keneni Desa — a Amharic-language leadership and theology book covering the philosophy of complete leadership vs. Machiavellian leadership principles.",
+      videoUrl: null
+    },
+    {
       id: 6,
       title: "PSI Ethiopia Newsletter",
       category: "Newsletter & Book Design",
