@@ -88,6 +88,16 @@ export const PORTFOLIO_DATA = {
       videoUrl: null
     },
     {
+      id: 51,
+      title: "U-GIRLS 2 Project Booklet",
+      category: "Newsletter & Book Design",
+      year: "2025",
+      image: "",
+      pdfUrl: "images/real/ugirls2-booklet.pdf",
+      description: "Project booklet design for Cuso International's U-GIRLS 2 initiative — promoting greater access to university for girls in Ethiopia's Benishangul-Gumuz region. Covers program objectives, key interventions, achievements, and impact.",
+      videoUrl: null
+    },
+    {
       id: 6,
       title: "PSI Ethiopia Newsletter",
       category: "Newsletter & Book Design",
